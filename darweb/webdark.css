@@ -1,0 +1,229 @@
+ 
+body{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background-color: #2a9d8f;
+}
+::selection{
+  background-color: rgb(230, 226, 181);
+  border: 1px solid rgb(230, 226, 181);
+  border-radius: 20px 20px 20px 20px;
+}
+div.h1 {
+  color:#079204;
+  size: 100px;
+}
+ 
+section span#first {
+  color:blue;
+}
+section span#second {
+  color:red;
+}
+section span#third {
+  color:purple;
+}
+section span#fourth {
+  color:yellow;
+}
+
+
+/*input*/
+section#form_get {
+  border: 1px solid rgb(209, 255, 3);
+  border-radius: 10px 10px 10px 10px;
+  background-color: #FFC090;
+  color: #7FB77E;
+  width: 250px;
+  height:80px;
+}
+form#inner_get {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+input#job_get {
+  background-color: #B1D7B4;
+  border:1px solid #85cc83;
+  color: rgb(0, 121, 38);
+}
+input#job_get:hover {
+  background-color: #7ba77f86;
+  color: gray;
+}
+
+button#add_button {
+  background-color: #B1D7B4;
+  color: #7FB77E;
+  border: 1px solid #7FB77E;
+}
+
+button#add_button :hover {
+  background-color: #03f117;
+  color: #07ffe6;
+}
+input#job_get:focus~ button#add_button,
+input#joc_get:valid~ button#add_button {
+  background-color: #0400f7;
+  color: rgb(255, 255, 255);
+}
+
+/*index*/
+section#form_index {
+  border: 1px solid rgb(209, 255, 3);
+  border-radius: 10px 10px 10px 10px;
+  background-color: #FFC090;
+  width: 250px;
+  height: fit-content;
+  margin-top: 25px;
+  color: #7FB77E;
+}
+button#delete{
+  background-color: red;
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+div#pattern {
+  padding-left:650px;
+  padding-top: 15px;
+}
+
+header {
+  text-align: center;
+  background: wheat;
+  width: auto;
+  margin: 0px 0px auto 0px;
+  height: 150px;
+  padding-top: 20px;
+  font-size: 37px;
+  color: #053c78;
+  margin: 0px 0px 0px 0px;
+
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(149, 255, 0); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 255, 60); 
+}
+div#content {
+ text-align: center;
+}
+button#getback {
+  position:relative ;
+  left:45%;
+}
+ 
+.progress{
+  position: relative;
+  width: 10px;
+  height: 80px;
+  border: 10px solid #000000;
+  border-radius: 15px;
+  background-color: #c5ff07;
+}
+.progress .color{
+  position: absolute;
+  background-color: #ff0000;
+  height: 0px;
+  width: 10px;
+  border-radius: 15px;
+  animation: progres 4s infinite linear;    
+}
+.progress .color:focus~button#add_button,
+.progress .color:valid~button#add_button{
+  background-color: #465e48;
+}
+.progress:focus~button#add_button,
+.progress:valid~button#add_button{
+  background-color: #00f414;
+}
+@keyframes progres{
+  100%{
+    height: 0%;
+  }
+  75%{
+      height: 50%;
+  }
+  50%{
+      height: 75%;
+  }
+  25%{
+      height: 85%;
+  }
+  0%{
+      height: 100%;
+  }
+};
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
